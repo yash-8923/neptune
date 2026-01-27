@@ -1,0 +1,37 @@
+.elementor-103 .elementor-element.elementor-element-1b18cb4{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-103 .elementor-element.elementor-element-1b18cb4 > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-103 .elementor-element.elementor-element-b37773d > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-103 .elementor-element.elementor-element-b37773d > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-103 .elementor-element.elementor-element-5d9b752 .aux-widget-container{text-align:left;}.elementor-103 .elementor-element.elementor-element-5d9b752 > .elementor-widget-container{margin:0px 0px -40px 0px;}.elementor-103 .elementor-element.elementor-element-5d9b752{width:auto;max-width:auto;}.elementor-103 .elementor-element.elementor-element-e46a110 .aux-widget-testimonial .aux-testimonial-image{width:90px;}.elementor-103 .elementor-element.elementor-element-e46a110 .aux-testimonial-image img{border-radius:100% 100% 100% 100%;overflow:hidden;}.elementor-103 .elementor-element.elementor-element-e46a110 .aux-testimonial-image{margin-top:36px;margin-bottom:0px;}.elementor-103 .elementor-element.elementor-element-e46a110 .col-title a, .elementor-103 .elementor-element.elementor-element-e46a110 .col-title{color:var( --e-global-color-primary );}.elementor-103 .elementor-element.elementor-element-e46a110 .col-title, .elementor-103 .elementor-element.elementor-element-e46a110 .col-title a{font-size:25px;font-weight:400;}.elementor-103 .elementor-element.elementor-element-e46a110 .col-title{margin-top:34px;margin-bottom:7px;}.elementor-103 .elementor-element.elementor-element-e46a110 .col-subtitle{color:#FFFFFFC7 !important;font-family:"Poppins", Sans-serif;font-size:16px;font-weight:300;margin-bottom:0px;}.elementor-103 .elementor-element.elementor-element-e46a110 .aux-testimonial-content{color:var( --e-global-color-text );font-family:"Playfair Display", Sans-serif;font-size:33px;font-weight:400;letter-spacing:0px;}.elementor-103 .elementor-element.elementor-element-e46a110 .aux-widget-testimonial{text-align:left;padding:0px 0px 0px 0px;}.elementor-103 .elementor-element.elementor-element-e46a110 > .elementor-widget-container{margin:0px 0px 0px 0px;}@media(max-width:1024px){.elementor-103 .elementor-element.elementor-element-e46a110 .aux-testimonial-image{margin-top:0px;margin-bottom:0px;}.elementor-103 .elementor-element.elementor-element-e46a110 .col-title, .elementor-103 .elementor-element.elementor-element-e46a110 .col-title a{font-size:20px;}.elementor-103 .elementor-element.elementor-element-e46a110 .col-title{margin-top:0px;margin-bottom:0px;}.elementor-103 .elementor-element.elementor-element-e46a110 .col-subtitle{font-size:15px;}.elementor-103 .elementor-element.elementor-element-e46a110 .aux-testimonial-content{font-size:26px;}.elementor-103 .elementor-element.elementor-element-e46a110 .aux-testimonial-content .entry-content{margin-top:0px;margin-bottom:0px;}}@media(max-width:767px){.elementor-103 .elementor-element.elementor-element-e46a110 .aux-widget-testimonial .aux-testimonial-image{width:77px;}.elementor-103 .elementor-element.elementor-element-e46a110 .aux-testimonial-content{font-size:19px;}}/* Start custom CSS for aux_simple_svg, class: .elementor-element-5d9b752 */@media only screen and (max-width: 1025px) {
+.elementor-103 .elementor-element.elementor-element-5d9b752 .aux-the-svg svg{
+    width: 119px;
+}
+}
+@media only screen and (max-width:768px){
+.elementor-103 .elementor-element.elementor-element-5d9b752 .aux-the-svg svg{
+   width: 64px;
+}
+}/* End custom CSS */
+/* Start custom CSS for aux_testimonial, class: .elementor-element-e46a110 */.elementor-103 .elementor-element.elementor-element-e46a110 .aux-testimonial-infobox{
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+}
+.elementor-103 .elementor-element.elementor-element-e46a110 .aux-testimonial-info{
+    margin-left: 22px;
+}
+.elementor-103 .elementor-element.elementor-element-e46a110 .entry-content{
+   max-width: 731px;
+}
+.elementor-103 .elementor-element.elementor-element-e46a110 .entry-content:after{
+   display:none;
+}
+.elementor-103 .elementor-element.elementor-element-e46a110 .entry-content:before{
+   color: #ffffff42;
+}
+@media only screen and (max-width: 768px){
+.elementor-103 .elementor-element.elementor-element-e46a110 .aux-testimonial-info{
+    padding-left: 0;
+}
+}
+@media only screen and (max-width: 1025px)and (min-width: 768px) {
+.elementor-103 .elementor-element.elementor-element-e46a110 .aux-testimonial-content .entry-content{
+    max-width: 586px;
+}
+}/* End custom CSS */

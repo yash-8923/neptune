@@ -1,0 +1,80 @@
+.elementor-100 .elementor-element.elementor-element-101d8f8 .col-title a, .elementor-100 .elementor-element.elementor-element-101d8f8 .col-title{color:var( --e-global-color-text );}.elementor-100 .elementor-element.elementor-element-101d8f8 .col-title, .elementor-100 .elementor-element.elementor-element-101d8f8 .col-title a{font-size:23px;font-weight:bold;line-height:1.2em;}.elementor-100 .elementor-element.elementor-element-101d8f8 .aux-staff-content  .col-title{margin-bottom:8px;}.elementor-100 .elementor-element.elementor-element-101d8f8 .col-subtitle{color:#FFFFFFB5 !important;}.elementor-100 .elementor-element.elementor-element-101d8f8 .aux-staff-content  .col-subtitle{font-size:16px;font-weight:400;text-transform:capitalize;font-style:normal;}.elementor-100 .elementor-element.elementor-element-101d8f8 .aux-social-list a{color:#FFFFFF;}.elementor-100 .elementor-element.elementor-element-101d8f8 .aux-widget-staff .aux-staff-content{padding:2px 0px 16px 35px;}@media(max-width:1024px){.elementor-100 .elementor-element.elementor-element-101d8f8 .aux-widget-staff .aux-staff-content{padding:0px 0px 30px 35px;}}@media(max-width:767px){.elementor-100 .elementor-element.elementor-element-101d8f8 .aux-widget-staff .aux-staff-content{padding:2px 0px 75px 35px;}}/* Start custom CSS for aux_staff, class: .elementor-element-101d8f8 */.elementor-100 .elementor-element.elementor-element-101d8f8 .aux-widget-staff .aux-staff-footer {
+    border-top: none;
+}
+.elementor-100 .elementor-element.elementor-element-101d8f8 .aux-staff-content{
+    background-color: var( --e-global-color-secondary );
+    border-radius: 0px 0px 10px 10px;
+}
+.elementor-100 .elementor-element.elementor-element-101d8f8 .aux-social-list span:before{
+    padding: 12px;
+    background-color: #ffffff46;
+    border-radius: 100px;
+    margin-right: 11px;
+    
+}
+.elementor-100 .elementor-element.elementor-element-101d8f8 .aux-media-image img{
+    border-radius: 10px 10px 0px 0px;
+}
+.elementor-100 .elementor-element.elementor-element-101d8f8 .aux-staff-content{
+    position: relative;
+    transition: all 250ms ease-out;
+}
+.elementor-100 .elementor-element.elementor-element-101d8f8 .aux-staff-footer{
+    position: absolute;
+    right: 22px;
+    top: 30px;
+}
+.elementor-100 .elementor-element.elementor-element-101d8f8 .aux-wrap-style-simple:hover .aux-staff-content{
+    background-color: var( --e-global-color-primary );
+}
+.elementor-100 .elementor-element.elementor-element-101d8f8 .aux-staff-content{
+    margin-top: -102px;
+}
+
+@media only screen and (max-width: 1025px) and (min-width: 768px) {
+.elementor-100 .elementor-element.elementor-element-101d8f8 .aux-staff-content {
+    margin-top: -43px;
+}
+
+.elementor-100 .elementor-element.elementor-element-101d8f8 .aux-social-list span:before {
+    padding: 9px;
+}
+}
+@media only screen and (max-width:845px) and (min-width:767px) {
+.elementor-100 .elementor-element.elementor-element-101d8f8 .aux-staff-content{
+    padding: 0px 0px 77px 35px!important;
+}
+}
+@media only screen and (max-width:845px) {
+.elementor-100 .elementor-element.elementor-element-101d8f8 .aux-staff-footer{
+    right: auto;
+    top: 97px!important;
+    left: 33px;
+}
+}
+.elementor-100 .elementor-element.elementor-element-101d8f8 .aux-wrap-style-simple li span:before{
+    transition: all 250ms ease-out;
+}
+.elementor-100 .elementor-element.elementor-element-101d8f8 .aux-wrap-style-simple:hover li:hover span:before{
+    color: var( --e-global-color-primary );
+    background-color: var( --e-global-color-text );
+}
+@media only screen and (max-width:1264px)and (min-width:1025px) {
+.elementor-100 .elementor-element.elementor-element-101d8f8 .aux-staff-footer{
+    position: relative!important;
+    right: 0!important;
+    top: 0!important;
+}
+}/* End custom CSS */
+/* Start custom CSS for section, class: .elementor-element-229c7e4 */.elementor-100 .elementor-element.elementor-element-229c7e4 .aux-staff-content{
+    position: relative;
+    transition: all 150ms ease-out;
+}
+.elementor-100 .elementor-element.elementor-element-229c7e4 .aux-staff-footer{
+    position: absolute;
+    right: 22px;
+    top: 30px;
+}
+.elementor-100 .elementor-element.elementor-element-229c7e4 .aux-wrap-style-simple:hover .aux-staff-content{
+    background-color: var( --e-global-color-primary );
+}/* End custom CSS */

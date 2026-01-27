@@ -1,0 +1,445 @@
+
+.depicter-revert .depicter-1-element-10{
+	background-color:transparent;
+}
+.depicter-revert .depicter-1-element-10:not(.depicter-hover-off){
+	transition:all ease 0.3s;
+}
+.depicter-revert .depicter-1-element-10:not(.depicter-hover-off):hover {
+	background-color:transparent;
+}
+.depicter-1-element-10 .depicter-arrow-icon{
+	fill:#000000;
+	transition:all ease 0.3s;
+}
+.depicter-1-element-10:not(.depicter-hover-off):hover .depicter-arrow-icon{
+	fill:#FFFFFF;
+}
+.depicter-revert .depicter-1-element-11{
+	background-color:transparent;
+}
+.depicter-revert .depicter-1-element-11:not(.depicter-hover-off){
+	transition:all ease 0.3s;
+}
+.depicter-revert .depicter-1-element-11:not(.depicter-hover-off):hover {
+	background-color:transparent;
+}
+.depicter-1-element-11 .depicter-arrow-icon{
+	fill:rgba(0, 0, 0, 0.5);
+	transition:all ease 0.3s;
+}
+.depicter-1-element-11:not(.depicter-hover-off):hover .depicter-arrow-icon{
+	fill:#FFFFFF;
+}
+.depicter-revert .depicter-1-element-9{
+	font-size:16px;
+	color:#000000;
+	font-family:"Josefin Sans";
+	font-weight:700;
+	line-height:100%;
+	background-color:transparent;
+}
+.depicter-revert .depicter-1-element-9:not(.depicter-hover-off){
+	transition:all ease 0.3s;
+}
+.depicter-revert .depicter-1-element-9:not(.depicter-hover-off):hover {
+	color:#8C0398;
+	background-color:transparent;
+}
+.depicter-revert .depicter-1-element-8{
+	background-color:#EED306;
+}
+.depicter-revert .depicter-1-element-6{
+	font-size:70px;
+	color:#000000;
+	font-family:"Alef";
+	font-weight:700;
+	line-height:105%;
+	letter-spacing:-2px;
+	background-color:transparent;
+}
+.depicter-revert .depicter-1-element-5{
+	font-size:20px;
+	color:#000000;
+	font-family:"Josefin Sans";
+	font-weight:700;
+	line-height:120%;
+	background-color:transparent;
+}
+.depicter-revert .depicter-1-element-4{
+	background-color:#EED306;
+}
+.depicter-revert .depicter-1-element-3{
+	background-color:#8C0498;
+}
+.depicter-revert .depicter-1-section-1 .depicter-section-background{
+	background-color:#36B5DD;
+}
+.depicter-revert .depicter-1-element-20{
+	font-size:16px;
+	color:#FFFFFF;
+	font-family:"Josefin Sans";
+	font-weight:700;
+	line-height:100%;
+	background-color:transparent;
+}
+.depicter-revert .depicter-1-element-20:not(.depicter-hover-off){
+	transition:all ease 0.3s;
+}
+.depicter-revert .depicter-1-element-20:not(.depicter-hover-off):hover {
+	color:#FF4702;
+	background-color:transparent;
+}
+.depicter-revert .depicter-1-element-19{
+	background-color:#0F40FF;
+}
+.depicter-revert .depicter-1-element-18{
+	opacity:0.7;
+	font-size:16px;
+	color:#000000;
+	font-family:"Josefin Sans";
+	font-weight:400;
+	line-height:120%;
+	background-color:transparent;
+}
+.depicter-revert .depicter-1-element-17{
+	font-size:70px;
+	color:#000000;
+	font-family:"Alef";
+	font-weight:700;
+	line-height:105%;
+	letter-spacing:-2px;
+	background-color:transparent;
+}
+.depicter-revert .depicter-1-element-16{
+	font-size:20px;
+	color:#000000;
+	font-family:"Josefin Sans";
+	font-weight:700;
+	line-height:120%;
+	background-color:transparent;
+}
+.depicter-revert .depicter-1-element-15{
+	background-color:#0F40FF;
+}
+.depicter-revert .depicter-1-element-14{
+	background-color:#FF4702;
+}
+.depicter-revert .depicter-1-section-12 .depicter-section-background{
+	background-color:#FFFFFF;
+}
+.depicter-revert .depicter-1-element-29{
+	font-size:16px;
+	color:#FFFFFF;
+	font-family:"Josefin Sans";
+	font-weight:700;
+	line-height:100%;
+	background-color:transparent;
+}
+.depicter-revert .depicter-1-element-29:not(.depicter-hover-off){
+	transition:all ease 0.3s;
+}
+.depicter-revert .depicter-1-element-29:not(.depicter-hover-off):hover {
+	color:#FFA207;
+	background-color:transparent;
+}
+.depicter-revert .depicter-1-element-28{
+	background-color:#0032D6;
+}
+.depicter-revert .depicter-1-element-27{
+	opacity:0.7;
+	font-size:16px;
+	color:#000000;
+	font-family:"Josefin Sans";
+	font-weight:400;
+	line-height:120%;
+	background-color:transparent;
+}
+.depicter-revert .depicter-1-element-26{
+	font-size:70px;
+	color:#000000;
+	font-family:"Alef";
+	font-weight:700;
+	line-height:105%;
+	letter-spacing:-2px;
+	background-color:transparent;
+}
+.depicter-revert .depicter-1-element-25{
+	font-size:20px;
+	color:#000000;
+	font-family:"Josefin Sans";
+	font-weight:700;
+	line-height:120%;
+	background-color:transparent;
+}
+.depicter-revert .depicter-1-element-24{
+	background-color:#0032D6;
+}
+.depicter-revert .depicter-1-element-23{
+	background-color:#FFA207;
+}
+.depicter-revert .depicter-1-section-21 .depicter-section-background{
+	background-color:#FFFFFF;
+}
+
+/***** Tablet *****/
+@media screen and (max-width: 1024px){
+
+.depicter-revert .depicter-1-element-10{
+	background-color:transparent;
+}
+.depicter-revert .depicter-1-element-10:not(.depicter-hover-off){
+	transition:all ease 0.3s;
+}
+.depicter-1-element-10 .depicter-arrow-icon{
+	fill:#FFFFFF;
+	transition:all ease 0.3s;
+}
+.depicter-revert .depicter-1-element-11:not(.depicter-hover-off){
+	transition:all ease 0.3s;
+}
+.depicter-1-element-11 .depicter-arrow-icon{
+	transition:all ease 0.3s;
+}
+.depicter-revert .depicter-1-element-9{
+	font-size:16px;
+	color:#000000;
+	font-family:"Josefin Sans";
+	font-weight:700;
+	line-height:100%;
+	background-color:transparent;
+}
+.depicter-revert .depicter-1-element-8{
+	background-color:#EED306;
+}
+.depicter-revert .depicter-1-element-6{
+	font-size:60px;
+	color:#000000;
+	font-family:"Alef";
+	font-weight:700;
+	line-height:105%;
+	letter-spacing:-2px;
+	background-color:transparent;
+}
+.depicter-revert .depicter-1-element-4{
+	background-color:#EED306;
+}
+.depicter-revert .depicter-1-element-3{
+	background-color:#8C0498;
+}
+.depicter-revert .depicter-1-section-1 .depicter-section-background{
+	background-color:#FFFFFF;
+}
+.depicter-revert .depicter-1-element-20{
+	font-size:16px;
+	color:#FFFFFF;
+	font-family:"Josefin Sans";
+	font-weight:700;
+	line-height:100%;
+}
+.depicter-revert .depicter-1-element-19{
+	background-color:#0F40FF;
+}
+.depicter-revert .depicter-1-element-18{
+	font-size:16px;
+	color:#000000;
+	font-family:"Josefin Sans";
+	font-weight:400;
+	line-height:120%;
+	background-color:transparent;
+}
+.depicter-revert .depicter-1-element-17{
+	font-size:60px;
+	color:#000000;
+	font-family:"Alef";
+	font-weight:700;
+	line-height:105%;
+	letter-spacing:-2px;
+	background-color:transparent;
+}
+.depicter-revert .depicter-1-element-15{
+	background-color:#0F40FF;
+}
+.depicter-revert .depicter-1-element-14{
+	background-color:#FF4702;
+}
+.depicter-revert .depicter-1-section-12 .depicter-section-background{
+	background-color:#FFFFFF;
+}
+.depicter-revert .depicter-1-element-29{
+	font-size:16px;
+	color:#FFFFFF;
+	font-family:"Josefin Sans";
+	font-weight:700;
+	line-height:100%;
+}
+.depicter-revert .depicter-1-element-28{
+	background-color:#0032D6;
+}
+.depicter-revert .depicter-1-element-27{
+	font-size:16px;
+	color:#000000;
+	font-family:"Josefin Sans";
+	font-weight:400;
+	line-height:120%;
+	background-color:transparent;
+}
+.depicter-revert .depicter-1-element-26{
+	font-size:60px;
+	color:#000000;
+	font-family:"Alef";
+	font-weight:700;
+	line-height:105%;
+	letter-spacing:-2px;
+	background-color:transparent;
+}
+.depicter-revert .depicter-1-element-24{
+	background-color:#0032D6;
+}
+.depicter-revert .depicter-1-element-23{
+	background-color:#FFA207;
+}
+.depicter-revert .depicter-1-section-21 .depicter-section-background{
+	background-color:#FFFFFF;
+}
+
+}
+/***** Mobile *****/
+@media screen and (max-width: 767px){
+
+.depicter-revert .depicter-1-element-10{
+	background-color:transparent;
+}
+.depicter-revert .depicter-1-element-10:not(.depicter-hover-off){
+	transition:all ease 0.3s;
+}
+.depicter-1-element-10 .depicter-arrow-icon{
+	fill:#FFFFFF;
+	transition:all ease 0.3s;
+}
+.depicter-revert .depicter-1-element-9{
+	font-size:16px;
+	color:#000000;
+	font-family:"Josefin Sans";
+	font-weight:600;
+	line-height:100%;
+	background-color:transparent;
+}
+.depicter-revert .depicter-1-element-8{
+	background-color:#EED306;
+}
+.depicter-revert .depicter-1-element-6{
+	font-size:40px;
+	color:#000000;
+	font-family:"Alef";
+	font-weight:700;
+	line-height:105%;
+	letter-spacing:-2px;
+	background-color:transparent;
+}
+.depicter-revert .depicter-1-element-5{
+	font-size:18px;
+	color:#000000;
+	font-family:"Josefin Sans";
+	font-weight:700;
+	line-height:120%;
+}
+.depicter-revert .depicter-1-element-4{
+	background-color:#EED306;
+}
+.depicter-revert .depicter-1-element-3{
+	background-color:#8C0498;
+}
+.depicter-revert .depicter-1-section-1 .depicter-section-background{
+	background-color:#FFFFFF;
+}
+.depicter-revert .depicter-1-element-20{
+	font-size:16px;
+	color:#FFFFFF;
+	font-family:"Josefin Sans";
+	font-weight:600;
+	line-height:100%;
+	background-color:transparent;
+}
+.depicter-revert .depicter-1-element-19{
+	background-color:#0F40FF;
+}
+.depicter-revert .depicter-1-element-18{
+	font-size:12px;
+	color:#000000;
+	font-family:"Josefin Sans";
+	font-weight:400;
+	line-height:120%;
+	background-color:transparent;
+}
+.depicter-revert .depicter-1-element-17{
+	font-size:40px;
+	color:#000000;
+	font-family:"Alef";
+	font-weight:700;
+	line-height:105%;
+	letter-spacing:-2px;
+	background-color:transparent;
+}
+.depicter-revert .depicter-1-element-16{
+	font-size:18px;
+	color:#000000;
+	font-family:"Josefin Sans";
+	font-weight:700;
+	line-height:120%;
+}
+.depicter-revert .depicter-1-element-15{
+	background-color:#0F40FF;
+}
+.depicter-revert .depicter-1-element-14{
+	background-color:#FF4702;
+}
+.depicter-revert .depicter-1-section-12 .depicter-section-background{
+	background-color:#FFFFFF;
+}
+.depicter-revert .depicter-1-element-29{
+	font-size:16px;
+	color:#FFFFFF;
+	font-family:"Josefin Sans";
+	font-weight:600;
+	line-height:100%;
+	background-color:transparent;
+}
+.depicter-revert .depicter-1-element-28{
+	background-color:#0032D6;
+}
+.depicter-revert .depicter-1-element-27{
+	font-size:12px;
+	color:#000000;
+	font-family:"Josefin Sans";
+	font-weight:400;
+	line-height:120%;
+	background-color:transparent;
+}
+.depicter-revert .depicter-1-element-26{
+	font-size:40px;
+	color:#000000;
+	font-family:"Alef";
+	font-weight:700;
+	line-height:105%;
+	letter-spacing:-2px;
+	background-color:transparent;
+}
+.depicter-revert .depicter-1-element-25{
+	font-size:18px;
+	color:#000000;
+	font-family:"Josefin Sans";
+	font-weight:700;
+	line-height:120%;
+}
+.depicter-revert .depicter-1-element-24{
+	background-color:#0032D6;
+}
+.depicter-revert .depicter-1-element-23{
+	background-color:#FFA207;
+}
+.depicter-revert .depicter-1-section-21 .depicter-section-background{
+	background-color:#FFFFFF;
+}
+
+}

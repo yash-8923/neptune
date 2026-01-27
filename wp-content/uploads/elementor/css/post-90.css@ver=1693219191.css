@@ -1,0 +1,32 @@
+.elementor-90 .elementor-element.elementor-element-c9d52d0 > .elementor-element-populated{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;}.elementor-90 .elementor-element.elementor-element-c9d52d0 > .elementor-element-populated > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-90 .elementor-element.elementor-element-f7ba363 .aux-widget-container{text-align:left;}.elementor-90 .elementor-element.elementor-element-f7ba363 > .elementor-widget-container{margin:0px 0px -40px 0px;}.elementor-90 .elementor-element.elementor-element-f7ba363{width:auto;max-width:auto;}.elementor-90 .elementor-element.elementor-element-f4806b9 .aux-widget-testimonial .aux-testimonial-image{width:165px;}.elementor-90 .elementor-element.elementor-element-f4806b9 .aux-testimonial-image img{border-radius:100% 100% 100% 100%;overflow:hidden;}.elementor-90 .elementor-element.elementor-element-f4806b9 .aux-testimonial-image{margin-top:36px;margin-bottom:0px;}.elementor-90 .elementor-element.elementor-element-f4806b9 .col-title a, .elementor-90 .elementor-element.elementor-element-f4806b9 .col-title{color:var( --e-global-color-primary );}.elementor-90 .elementor-element.elementor-element-f4806b9 .col-title, .elementor-90 .elementor-element.elementor-element-f4806b9 .col-title a{font-size:25px;font-weight:400;}.elementor-90 .elementor-element.elementor-element-f4806b9 .col-title{margin-top:18px;margin-bottom:7px;}.elementor-90 .elementor-element.elementor-element-f4806b9 .col-subtitle{color:#FFFFFFC7 !important;font-family:"Poppins", Sans-serif;font-size:16px;font-weight:300;margin-bottom:0px;}.elementor-90 .elementor-element.elementor-element-f4806b9 .aux-testimonial-content{color:var( --e-global-color-text );font-family:"Playfair Display", Sans-serif;font-size:33px;font-weight:400;letter-spacing:0px;}.elementor-90 .elementor-element.elementor-element-f4806b9 .aux-widget-testimonial{text-align:left;padding:0px 0px 0px 0px;}.elementor-90 .elementor-element.elementor-element-f4806b9 > .elementor-widget-container{margin:0px 0px 0px 0px;}@media(max-width:1024px){.elementor-90 .elementor-element.elementor-element-f4806b9 .aux-testimonial-image{margin-top:0px;margin-bottom:0px;}.elementor-90 .elementor-element.elementor-element-f4806b9 .col-title, .elementor-90 .elementor-element.elementor-element-f4806b9 .col-title a{font-size:20px;}.elementor-90 .elementor-element.elementor-element-f4806b9 .col-title{margin-top:0px;margin-bottom:0px;}.elementor-90 .elementor-element.elementor-element-f4806b9 .col-subtitle{font-size:15px;}.elementor-90 .elementor-element.elementor-element-f4806b9 .aux-testimonial-content{font-size:26px;}.elementor-90 .elementor-element.elementor-element-f4806b9 .aux-testimonial-content .entry-content{margin-top:0px;margin-bottom:10px;}}@media(max-width:767px){.elementor-90 .elementor-element.elementor-element-f4806b9 .aux-widget-testimonial .aux-testimonial-image{width:138px;}.elementor-90 .elementor-element.elementor-element-f4806b9 .aux-testimonial-content{font-size:19px;}}/* Start custom CSS for aux_simple_svg, class: .elementor-element-f7ba363 */@media only screen and (max-width: 1025px) {
+.elementor-90 .elementor-element.elementor-element-f7ba363 .aux-the-svg svg{
+    width: 119px;
+}
+}
+@media only screen and (max-width:768px){
+.elementor-90 .elementor-element.elementor-element-f7ba363 .aux-the-svg svg{
+   width: 64px;
+}
+}/* End custom CSS */
+/* Start custom CSS for aux_testimonial, class: .elementor-element-f4806b9 */.elementor-90 .elementor-element.elementor-element-f4806b9 .aux-testimonial-infobox{
+    display: flex;
+    align-items: center;
+    margin-left: -34px;
+}
+.elementor-90 .elementor-element.elementor-element-f4806b9 .aux-testimonial-info{
+    margin-left: -15px;
+}
+.elementor-90 .elementor-element.elementor-element-f4806b9 .entry-content{
+   max-width: 731px;
+}
+.elementor-90 .elementor-element.elementor-element-f4806b9 .entry-content:after{
+   display:none;
+}
+.elementor-90 .elementor-element.elementor-element-f4806b9 .entry-content:before{
+   color: #ffffff42;
+}
+@media only screen and (max-width: 768px){
+.elementor-90 .elementor-element.elementor-element-f4806b9 .aux-testimonial-info{
+    padding-left: 0;
+}
+}/* End custom CSS */

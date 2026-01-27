@@ -1,0 +1,73 @@
+.elementor-80 .elementor-element.elementor-element-440d69c .col-title a, .elementor-80 .elementor-element.elementor-element-440d69c .col-title{color:var( --e-global-color-text );}.elementor-80 .elementor-element.elementor-element-440d69c .col-title, .elementor-80 .elementor-element.elementor-element-440d69c .col-title a{font-size:23px;font-weight:bold;line-height:1.2em;}.elementor-80 .elementor-element.elementor-element-440d69c .aux-staff-content  .col-title{margin-bottom:8px;}.elementor-80 .elementor-element.elementor-element-440d69c .col-subtitle{color:#FFFFFFB5 !important;}.elementor-80 .elementor-element.elementor-element-440d69c .aux-staff-content  .col-subtitle{font-size:16px;font-weight:400;text-transform:capitalize;font-style:normal;}.elementor-80 .elementor-element.elementor-element-440d69c .aux-social-list a{color:#FFFFFF;}.elementor-80 .elementor-element.elementor-element-440d69c .aux-widget-staff .aux-staff-content{padding:2px 0px 16px 35px;}.elementor-80 .elementor-element.elementor-element-440d69c > .elementor-widget-container{background-color:#E5E2E3;border-radius:15px 15px 15px 15px;}@media(max-width:1024px){.elementor-80 .elementor-element.elementor-element-440d69c .aux-widget-staff .aux-staff-content{padding:0px 0px 30px 35px;}}@media(max-width:767px){.elementor-80 .elementor-element.elementor-element-440d69c .aux-widget-staff .aux-staff-content{padding:2px 0px 75px 35px;}}/* Start custom CSS for aux_staff, class: .elementor-element-440d69c */.elementor-80 .elementor-element.elementor-element-440d69c .aux-widget-staff .aux-staff-footer {
+    border-top: none;
+}
+.elementor-80 .elementor-element.elementor-element-440d69c .aux-staff-content{
+    background-color: var( --e-global-color-secondary );
+    border-radius: 0px 0px 10px 10px;
+}
+.elementor-80 .elementor-element.elementor-element-440d69c .aux-social-list span:before{
+    padding: 12px;
+    background-color: #ffffff46;
+    border-radius: 100px;
+    margin-right: 11px;
+    
+}
+.elementor-80 .elementor-element.elementor-element-440d69c .aux-media-image img{
+    border-radius: 10px 10px 0px 0px;
+}
+.elementor-80 .elementor-element.elementor-element-440d69c .aux-staff-content{
+    position: relative;
+    transition: all 250ms ease-out;
+}
+.elementor-80 .elementor-element.elementor-element-440d69c .aux-staff-footer{
+    position: absolute;
+    right: 22px;
+    top: 30px;
+}
+.elementor-80 .elementor-element.elementor-element-440d69c .aux-wrap-style-simple:hover .aux-staff-content{
+    background-color: var( --e-global-color-primary );
+}
+.elementor-80 .elementor-element.elementor-element-440d69c .aux-staff-content{
+    margin-top: -102px;
+}
+
+@media only screen and (max-width: 1025px) and (min-width: 768px) {
+.elementor-80 .elementor-element.elementor-element-440d69c .aux-staff-content {
+    margin-top: -43px;
+}
+
+.elementor-80 .elementor-element.elementor-element-440d69c .aux-social-list span:before {
+    padding: 9px;
+}
+}
+@media only screen and (max-width:845px) and (min-width:767px) {
+.elementor-80 .elementor-element.elementor-element-440d69c .aux-staff-content{
+    padding: 0px 0px 77px 35px!important;
+}
+}
+@media only screen and (max-width:845px) {
+.elementor-80 .elementor-element.elementor-element-440d69c .aux-staff-footer{
+    right: auto;
+    top: 97px!important;
+    left: 33px;
+}
+}
+.elementor-80 .elementor-element.elementor-element-440d69c .aux-wrap-style-simple li span:before{
+    transition: all 250ms ease-out;
+}
+.elementor-80 .elementor-element.elementor-element-440d69c .aux-wrap-style-simple:hover li:hover span:before{
+    color: var( --e-global-color-primary );
+    background-color: var( --e-global-color-text );
+}
+.elementor-80 .elementor-element.elementor-element-440d69c .aux-media-image{
+    text-align: center;
+    max-width: 60%;
+    margin: auto;
+}
+@media only screen and (max-width:1264px)and (min-width:1025px) {
+.elementor-80 .elementor-element.elementor-element-440d69c .aux-staff-footer{
+    position: relative;
+    right: 0;
+    top: 0;
+}
+}/* End custom CSS */

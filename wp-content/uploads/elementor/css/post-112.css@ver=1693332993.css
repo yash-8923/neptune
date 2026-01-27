@@ -1,0 +1,114 @@
+.elementor-112 .elementor-element.elementor-element-13027ce{transition:background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;margin-top:20px;margin-bottom:155px;padding:0px 35px 0px 35px;}.elementor-112 .elementor-element.elementor-element-13027ce > .elementor-background-overlay{transition:background 0.3s, border-radius 0.3s, opacity 0.3s;}.elementor-112 .elementor-element.elementor-element-daeda66.elementor-column > .elementor-widget-wrap{justify-content:center;}.elementor-112 .elementor-element.elementor-element-1f4ebef .entry-media img{border-radius:10px 10px 10px 10px !important;}.elementor-112 .elementor-element.elementor-element-1f4ebef .entry-title a{color:var( --e-global-color-secondary );font-size:25px;font-weight:bold;text-transform:capitalize;}.elementor-112 .elementor-element.elementor-element-1f4ebef .entry-title{margin-bottom:24px;}.elementor-112 .elementor-element.elementor-element-1f4ebef .entry-info a, .elementor-112 .elementor-element.elementor-element-1f4ebef .entry-info{color:#00173385;}.elementor-112 .elementor-element.elementor-element-1f4ebef .entry-info, .elementor-112 .elementor-element.elementor-element-1f4ebef .entry-info a{font-size:16px;font-weight:400;text-transform:capitalize;}.elementor-112 .elementor-element.elementor-element-1f4ebef .type-post .entry-main{padding:0px 39px 30px 39px;}.elementor-112 .elementor-element.elementor-element-1f4ebef .aux-col .column-entry{background-color:var( --e-global-color-text );box-shadow:0px 13px 50px 0px rgba(0, 0, 0, 0.09019607843137255);}.elementor-112 .elementor-element.elementor-element-1f4ebef{text-align:left;animation-timing-function:cubic-bezier(0.25,0.46,0.45,0.94);}.elementor-112 .elementor-element.elementor-element-1f4ebef > .elementor-widget-container{margin:80px -15px 58px -9px;}@media(max-width:1024px){.elementor-112 .elementor-element.elementor-element-13027ce{margin-top:50px;margin-bottom:0px;}.elementor-112 .elementor-element.elementor-element-1f4ebef .entry-title a{font-size:20px;}.elementor-112 .elementor-element.elementor-element-1f4ebef .entry-info, .elementor-112 .elementor-element.elementor-element-1f4ebef .entry-info a{font-size:14px;}.elementor-112 .elementor-element.elementor-element-1f4ebef .type-post .entry-main{padding:10px 30px 20px 30px;}.elementor-112 .elementor-element.elementor-element-1f4ebef > .elementor-widget-container{margin:0px -6px 30px -6px;}}@media(max-width:767px){.elementor-112 .elementor-element.elementor-element-13027ce{margin-top:70px;margin-bottom:50px;}}/* Start custom CSS for aux_recent_posts, class: .elementor-element-1f4ebef */.elementor-112 .elementor-element.elementor-element-1f4ebef .aux-col .post {
+   border-radius: 0 0 10px 10px;
+}
+.elementor-112 .elementor-element.elementor-element-1f4ebef .entry-info{
+    border-top: 1px solid #7070703d;
+    padding-top: 27px;
+}
+.elementor-112 .elementor-element.elementor-element-1f4ebef .entry-meta-sep, .elementor-112 .elementor-element.elementor-element-1f4ebef .author a{
+    color: var( --e-global-color-secondary )!important;
+}
+.elementor-112 .elementor-element.elementor-element-1f4ebef .entry-date{
+    width: 79%;
+    display: inline-block;
+}
+.elementor-112 .elementor-element.elementor-element-1f4ebef .meta-sep:before{
+    display: none!important;
+}
+.elementor-112 .elementor-element.elementor-element-1f4ebef .entry-header .entry-title{
+    max-width: 376px;
+}
+.elementor-112 .elementor-element.elementor-element-1f4ebef .post:hover .entry-title a{
+    color:var( --e-global-color-primary );
+}
+.elementor-112 .elementor-element.elementor-element-1f4ebef .post:hover{
+    transform: translateY(-3%);
+}
+@media only screen and (min-width:1025px) {
+.elementor-112 .elementor-element.elementor-element-1f4ebef .aux-col{
+    width: 32%;
+    margin:61px 0.6% 0;
+}
+}
+.elementor-112 .elementor-element.elementor-element-1f4ebef .meta-sep{
+    display: none;
+}
+.elementor-112 .elementor-element.elementor-element-1f4ebef .entry-info{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.elementor-112 .elementor-element.elementor-element-1f4ebef .entry-date {
+    flex-basis: 35%;
+    text-align: right;
+}
+.elementor-112 .elementor-element.elementor-element-1f4ebef .author{
+    flex-basis: 69%;
+}
+@media only screen and (max-width: 600px) {
+.elementor-112 .elementor-element.elementor-element-1f4ebef .entry-date {
+    flex-basis: 50%;
+}
+.elementor-112 .elementor-element.elementor-element-1f4ebef .author{
+    flex-basis: 50%;
+}
+}
+.elementor-112 .elementor-element.elementor-element-1f4ebef .aux-label-text, .elementor-112 .elementor-element.elementor-element-1f4ebef .aux-load-more{
+    background-color: var( --e-global-color-primary );
+    width: 162px;
+    height: 52px;
+    min-width: 162px;
+    border-radius: 5px;
+    color: var( --e-global-color-text );
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 150ms ease-out;
+}
+.elementor-112 .elementor-element.elementor-element-1f4ebef .aux-label-text:hover{
+    background-color: #292929;
+}
+.elementor-112 .elementor-element.elementor-element-1f4ebef .aux-circle{
+    display: none;
+}
+.elementor-112 .elementor-element.elementor-element-1f4ebef .aux-active-loading {
+    background-color: transparent;
+}
+.elementor-112 .elementor-element.elementor-element-1f4ebef .aux-active-loading .aux-circle {
+    display: block;
+}
+.elementor-112 .elementor-element.elementor-element-1f4ebef .aux-load-more{
+    margin-top: 79px;
+}
+@media only screen and (max-width: 1440px) and (min-width: 1025px) {
+.elementor-112 .elementor-element.elementor-element-1f4ebef .entry-date {
+    flex-basis: 48%!important;
+}
+}
+@media only screen and (max-width: 1025px){
+.elementor-112 .elementor-element.elementor-element-1f4ebef .entry-date {
+    flex-basis: 68%;
+    text-align: right;
+}
+.elementor-112 .elementor-element.elementor-element-1f4ebef .entry-header{
+    height: 72px;
+    overflow: hidden;
+}
+}
+.elementor-112 .elementor-element.elementor-element-1f4ebef .aux-label-text, .elementor-112 .elementor-element.elementor-element-1f4ebef .aux-load-more{
+    z-index: 1;
+    font-family: "Playfair Display";
+    
+}
+.elementor-112 .elementor-element.elementor-element-1f4ebef .aux-label-text:hover, .elementor-112 .elementor-element.elementor-element-1f4ebef .aux-load-more:hover{
+   background-color: var( --e-global-color-secondary )!important;
+}
+@media only screen and (max-width: 1025px) and (min-width: 768px) {
+.elementor-112 .elementor-element.elementor-element-1f4ebef .aux-col{
+    padding-left: 22px;
+    padding-right: 22px;
+}
+}/* End custom CSS */
