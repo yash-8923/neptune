@@ -8,11 +8,11 @@
         <meta name="viewport"   content="initial-scale=1,user-scalable=no,width=device-width">
 
 <!-- outputs by wp_head -->
-<title>Neptune INC</title>
+<title>DRT Services Pvt Ltd</title>
 <meta name='robots' content='max-image-preview:large' />
 <link rel='dns-prefetch' href='https://fonts.googleapis.com/' />
-<link rel="alternate" type="application/rss+xml" title="Neptune INC &raquo; Feed" href="index.php/feed/index.html" />
-<link rel="alternate" type="application/rss+xml" title="Neptune INC &raquo; Comments Feed" href="index.php/comments/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="DRT Services Pvt Ltd &raquo; Feed" href="index.php/feed/index.html" />
+<link rel="alternate" type="application/rss+xml" title="DRT Services Pvt Ltd &raquo; Comments Feed" href="index.php/comments/feed/index.html" />
 <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="index.php/wp-json/oembed/1.0/embed@url=https%253A%252F%252Fneptuneinc.in%252F" />
 <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="index.php/wp-json/oembed/1.0/embed@url=https%253A%252F%252Fneptuneinc.in%252F&amp;format=xml" />
 <style id='wp-img-auto-sizes-contain-inline-css'>
@@ -100,9 +100,9 @@ function auxinNS(n){for(var e=n.split("."),a=window,i="",r=e.length,t=0;r>t;t++)
     <meta name="title"       content="Home" />
     <meta name="description" content="! This slider has unpublished changes. Publish the changes to see the final result.Open the editor and publish now. This notice is only visible to you. Let&#8217;s get started Best Overseas Recruitment Read More Let&#8217;s get started Best Manpower Solution Provider Read More Let&#8217;s get started Manpower Solutions For All Services Read More aBout us [&hellip;]" />
     <!-- Chrome, Firefox OS and Opera -->
-<meta name="theme-color" content="#1bb0ce" />
+<meta name="theme-color" content="#7c3aed" />
 <!-- Windows Phone -->
-<meta name="msapplication-navbutton-color" content="#1bb0ce" />
+<meta name="msapplication-navbutton-color" content="#7c3aed" />
 <!-- iOS Safari -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -488,7 +488,225 @@ display: none;
     padding-top: 75px!important;
 }
 }
+/* Custom layout overrides for cloned home page */
+.home .depicter-1{
+    display: none !important;
+}
 
+.home .custom-hero-section{
+    padding: 120px 0 80px;
+}
+
+.home .custom-hero-inner{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.home .custom-hero-grid{
+    display: grid;
+    grid-template-columns: minmax(0,1.2fr) minmax(0,1fr);
+    align-items: center;
+    gap: 3rem;
+}
+
+.home .custom-hero-eyebrow{
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--e-global-color-secondary);
+}
+
+.home .custom-hero-title{
+    font-size: clamp(32px, 4vw, 46px);
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.home .custom-hero-subtitle{
+    max-width: 520px;
+    margin-bottom: 24px;
+}
+
+.home .custom-hero-actions{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.home .custom-hero-btn-primary,
+.home .custom-hero-btn-secondary{
+    border-radius: 999px;
+    padding: 12px 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 13px;
+    border: 1px solid transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .custom-hero-btn-primary{
+    background-color: var(--e-global-color-primary);
+    color: #ffffff;
+}
+
+.home .custom-hero-btn-secondary{
+    background-color: transparent;
+    color: var(--e-global-color-primary);
+    border-color: var(--e-global-color-primary);
+}
+
+.home .custom-hero-meta{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.home .custom-hero-meta strong{
+    font-weight: 700;
+    margin-right: 6px;
+}
+
+.home .custom-hero-visual img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 18px;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+@media only screen and (max-width: 1024px) {
+    .home .custom-hero-section{
+        padding: 80px 0 60px;
+    }
+
+    .home .custom-hero-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .home .custom-hero-visual{
+        order: -1;
+        max-width: 480px;
+        margin: 0 auto 32px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .home .custom-hero-inner{
+        padding: 0 16px;
+    }
+
+    .home .custom-hero-actions{
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+/* Redesigned 'Industries We Serve' section */
+.home .elementor-element-f05d44c{
+    display: none !important;
+}
+
+.home .custom-industries-section{
+    padding: 60px 0 30px;
+    width: 100%;
+}
+
+.home .custom-industries-inner{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.home .custom-industries-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    width: 100%;
+}
+
+.home .custom-industry-card{
+    background-color: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.home .custom-industry-card img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.home .custom-industry-body{
+    padding: 18px 20px 20px;
+}
+
+.home .custom-industry-label{
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    margin-bottom: 6px;
+    color: var(--e-global-color-secondary);
+}
+
+.home .custom-industry-title{
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.home .custom-industry-text{
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.home .custom-industry-footer{
+    margin-top: 12px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.home .custom-industry-footer a{
+    text-decoration: none;
+}
+
+/* Tablet: 2 columns */
+@media only screen and (max-width: 1024px) {
+    .home .custom-industries-inner{
+        padding: 0 16px;
+    }
+    
+    .home .custom-industries-grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+/* Mobile: 1 column */
+@media only screen and (max-width: 640px) {
+    .home .custom-industries-inner{
+        padding: 0 16px;
+    }
+    
+    .home .custom-industries-grid{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
 
 		</style>
 		<!-- end wp_head -->
@@ -523,7 +741,7 @@ display: none;
 								<div class="elementor-element elementor-element-774beca aux-appear-watch-animation aux-fade-in-right elementor-widget elementor-widget-text-editor" data-id="774beca" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 			<style>/*! elementor - v3.15.0 - 20-08-2023 */
-.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p>Welcome to Neptune inc, The Leader in Abroad Jobs</p>						</div>
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p>Welcome to DRT Services Pvt Ltd, The Leader in Abroad Jobs</p>						</div>
 				</div>
 					</div>
 		</div>
@@ -578,7 +796,7 @@ display: none;
 											</a>
 				</p>
 									<p class="elementor-icon-box-description">
-						<a href = "mailto: apply@neptuneinc.in"> apply@neptuneinc.in</a>					</p>
+						<a href = "mailto: apply@drt.in"> apply@drt.in</a>					</p>
 							</div>
 		</div>
 				</div>
@@ -593,7 +811,7 @@ display: none;
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-bdbaa54 aux-appear-watch-animation aux-fade-in-left elementor-widget elementor-widget-aux_logo" data-id="bdbaa54" data-element_type="widget" data-widget_type="aux_logo.default">
 				<div class="elementor-widget-container">
-			<div class="aux-widget-logo"><a class="aux-logo-anchor aux-has-logo" title="Neptune INC" href="index.html"><img width="150" height="80" src="wp-content/uploads/2023/08/Untitled-design-5.png" class="aux-attachment aux-featured-image attachment-150x80 aux-attachment-id-130 " alt="Untitled design (5)" data-ratio="1.88" data-original-w="150" /></a><section class="aux-logo-text"><h3 class="site-title"><a href="index.html" title="Neptune INC">Neptune INC</a></h3></section></div>		</div>
+			<div class="aux-widget-logo"><a class="aux-logo-anchor aux-has-logo" title="DRT Services Pvt Ltd" href="index.html"><img width="150" height="80" src="wp-content/uploads/2023/08/drt (1).webp" class="aux-attachment aux-featured-image attachment-150x80 aux-attachment-id-130 " alt="Untitled design (5)" data-ratio="1.88" data-original-w="150" /></a><section class="aux-logo-text"><h3 class="site-title"><a href="index.html" title="DRT Services Pvt Ltd">DRT Services Pvt Ltd</a></h3></section></div>		</div>
 				</div>
 					</div>
 		</div>
@@ -712,6 +930,31 @@ display: none;
         <article id="post-115" class="post-115 page type-page status-publish hentry">
 
             		<div data-elementor-type="wp-page" data-elementor-id="115" class="elementor elementor-115">
+                        <section class="custom-hero-section">
+                            <div class="custom-hero-inner">
+                                <div class="custom-hero-grid">
+                                    <div class="custom-hero-copy">
+                                        <p class="custom-hero-eyebrow">International recruitment partner</p>
+                                        <h1 class="custom-hero-title">Smart overseas manpower solutions for complex projects.</h1>
+                                        <p class="custom-hero-subtitle">
+                                            DRT Services Pvt Ltd helps EPC, oil &amp; gas, construction and industrial businesses assemble project‑ready teams faster,
+                                            with vetted talent sourced from across India.
+                                        </p>
+                                        <div class="custom-hero-actions">
+                                            <a href="index.html@p=113.html" class="custom-hero-btn-primary">View services</a>
+                                            <a href="index.html@p=111.html" class="custom-hero-btn-secondary">Talk to our team</a>
+                                        </div>
+                                        <div class="custom-hero-meta">
+                                            <div><strong>10,000+</strong> candidates placed worldwide</div>
+                                            <div><strong>19+</strong> countries successfully served</div>
+                                        </div>
+                                    </div>
+                                    <div class="custom-hero-visual">
+                                        <img src="wp-content/uploads/2023/08/hero.png" alt="DRT Services recruitment team collaborating" loading="lazy" />
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
 									<section class="elementor-section elementor-top-section elementor-element elementor-element-0ddb6b4 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0ddb6b4" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="aux-parallax-section elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7c6def8" data-id="7c6def8" data-element_type="column">
@@ -880,8 +1123,8 @@ display: none;
 								<div class="elementor-element elementor-element-29297e5 aux-appear-watch-animation aux-fade-in-up-1 elementor-widget elementor-widget-aux_modern_heading" data-id="29297e5" data-element_type="widget" data-widget_type="aux_modern_heading.default">
 				<div class="elementor-widget-container">
 			<section class="aux-widget-modern-heading">
-            <div class="aux-widget-inner"><p class="aux-modern-heading-primary">aBout us</p><h4 class="aux-modern-heading-secondary"><span class="aux-head-before">Welcome To Neptune INC</span></h4><div class="aux-modern-heading-divider"></div><div class="aux-modern-heading-description"><p>Neptune inc is an  certified International Recruitment Manpower agency. Our Team of professionally qualified &amp; technically sound Engineers and coordinators help in targeting and mobilizing the right candidates with the relevant skills to ensure deadlines are met. We maintain a healthy data bank of various categories and keep refining the same regularly during every batch of mobilization through advertisements in leading newspapers as well as headhunting</p>
-<p>Neptune Inc stands apart when it comes to our sourcing skills, where our shortlisting of candidates are among the best in the Industry and are almost the perfect match for our Clients.</p></div></div>
+            <div class="aux-widget-inner"><p class="aux-modern-heading-primary">aBout us</p><h4 class="aux-modern-heading-secondary"><span class="aux-head-before">Welcome To DRT Services Pvt Ltd</span></h4><div class="aux-modern-heading-divider"></div><div class="aux-modern-heading-description"><p>DRT Services Pvt Ltd is an  certified International Recruitment Manpower agency. Our Team of professionally qualified &amp; technically sound Engineers and coordinators help in targeting and mobilizing the right candidates with the relevant skills to ensure deadlines are met. We maintain a healthy data bank of various categories and keep refining the same regularly during every batch of mobilization through advertisements in leading newspapers as well as headhunting</p>
+<p>DRT Services Pvt Ltd stands apart when it comes to our sourcing skills, where our shortlisting of candidates are among the best in the Industry and are almost the perfect match for our Clients.</p></div></div>
         </section>		</div>
 				</div>
 				<div class="elementor-element elementor-element-7d51203 elementor-widget__width-auto aux-appear-watch-animation aux-fade-in-up elementor-widget elementor-widget-aux_modern_button" data-id="7d51203" data-element_type="widget" data-widget_type="aux_modern_button.default">
@@ -972,6 +1215,66 @@ display: none;
             <div class="aux-widget-inner"><h2 class="aux-modern-heading-primary">Industries We Serve</h2><h3 class="aux-modern-heading-secondary"><span class="aux-head-before">Trusted by our Clients Since 2018</span></h3><div class="aux-modern-heading-divider"></div></div>
         </section>		</div>
 				</div>
+                <div class="custom-industries-section">
+                    <div class="custom-industries-inner">
+                        <div class="custom-industries-grid">
+                            <article class="custom-industry-card">
+                                <img src="wp-content/uploads/2021/08/Untitled-design-10.png" alt="Oil and Gas" loading="lazy" />
+                                <div class="custom-industry-body">
+                                    <div class="custom-industry-label">Energy</div>
+                                    <h4 class="custom-industry-title">Oil and Gas</h4>
+                                    <p class="custom-industry-text">Major upstream and downstream oil &amp; gas projects, pipelines and refineries supported with experienced multi‑discipline manpower.</p>
+                                    <div class="custom-industry-footer"><a href="index.html@p=375.html">Read More →</a></div>
+                                </div>
+                            </article>
+                            <article class="custom-industry-card">
+                                <img src="wp-content/uploads/2023/08/Untitled-design-15.png" alt="Power and Energy" loading="lazy" />
+                                <div class="custom-industry-body">
+                                    <div class="custom-industry-label">Infrastructure</div>
+                                    <h4 class="custom-industry-title">Power &amp; Energy</h4>
+                                    <p class="custom-industry-text">Generation, transmission and distribution projects staffed with technicians, engineers and commissioning specialists.</p>
+                                    <div class="custom-industry-footer"><a href="index.html@p=375.html">Read More →</a></div>
+                                </div>
+                            </article>
+                            <article class="custom-industry-card">
+                                <img src="wp-content/uploads/2023/08/Untitled-design-12.png" alt="Civil Construction" loading="lazy" />
+                                <div class="custom-industry-body">
+                                    <div class="custom-industry-label">Construction</div>
+                                    <h4 class="custom-industry-title">Civil Construction</h4>
+                                    <p class="custom-industry-text">Industrial, commercial and infrastructure civil works with crews trained on quality, productivity and safety standards.</p>
+                                    <div class="custom-industry-footer"><a href="index.html@p=375.html">Read More →</a></div>
+                                </div>
+                            </article>
+                            <article class="custom-industry-card">
+                                <img src="wp-content/uploads/2023/08/Untitled-design-27.png" alt="Shutdown maintenance" loading="lazy" />
+                                <div class="custom-industry-body">
+                                    <div class="custom-industry-label">Shutdowns</div>
+                                    <h4 class="custom-industry-title">Turnaround Maintenance</h4>
+                                    <p class="custom-industry-text">Fast‑track shutdown teams for critical windows, helping you complete overhauls safely and bring plants back online on schedule.</p>
+                                    <div class="custom-industry-footer"><a href="index.html@p=375.html">Read More →</a></div>
+                                </div>
+                            </article>
+                            <article class="custom-industry-card">
+                                <img src="wp-content/uploads/2023/08/Untitled-design-31.png" alt="Outsourcing consultants" loading="lazy" />
+                                <div class="custom-industry-body">
+                                    <div class="custom-industry-label">Outsourcing</div>
+                                    <h4 class="custom-industry-title">Manpower Outsourcing</h4>
+                                    <p class="custom-industry-text">Flexible deputation and long‑term outsourcing solutions to keep your sites fully staffed without adding to your payroll.</p>
+                                    <div class="custom-industry-footer"><a href="index.html@p=375.html">Read More →</a></div>
+                                </div>
+                            </article>
+                            <article class="custom-industry-card">
+                                <img src="wp-content/uploads/2023/08/Untitled-design-18.png" alt="Hospitality" loading="lazy" />
+                                <div class="custom-industry-body">
+                                    <div class="custom-industry-label">Services</div>
+                                    <h4 class="custom-industry-title">Hospitality &amp; Retail</h4>
+                                    <p class="custom-industry-text">Front‑of‑house, back‑of‑house and support roles for hospitality and retail brands across the GCC and beyond.</p>
+                                    <div class="custom-industry-footer"><a href="index.html@p=375.html">Read More  →</a></div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
 				<section class="elementor-section elementor-inner-section elementor-element elementor-element-f05d44c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f05d44c" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-no">
 					<div class="aux-parallax-section elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-8a1b9ec" data-id="8a1b9ec" data-element_type="column">
@@ -1194,7 +1497,7 @@ display: none;
             <div class="aux-text-inner aux-text-widget-content">
                                 <h4 class="col-title">Offshore Marine</h4>
                                 <div class="widget-content">
-                                        <div class="uc_text">Neptune INC ensures delivering trained and competent offshore and marine personnel to the offshore industry.</div>                </div>
+                                        <div class="uc_text">DRT Services Pvt Ltd ensures delivering trained and competent offshore and marine personnel to the offshore industry.</div>                </div>
                 <a  href="index.html@p=375.html" target="_self"   class="aux-button aux-medium aux-black aux-round aux-outline" ><span class="aux-overlay"></span><span class="aux-text">Read More</span></a>            </div>
         </div>
                     <div class="aux-text-widget-footer">
@@ -1216,7 +1519,7 @@ display: none;
             <div class="aux-text-inner aux-text-widget-content">
                                 <h4 class="col-title">Permanent migration</h4>
                                 <div class="widget-content">
-                                        <div class="uc_text">Neptune inc has been working for its clients and the candidates for the last 5 years with trust to give a benefit</div>                </div>
+                                        <div class="uc_text">DRT Services Pvt Ltd has been working for its clients and the candidates for the last 5 years with trust to give a benefit</div>                </div>
                 <a  href="index.html@p=375.html" target="_self"   class="aux-button aux-medium aux-black aux-round aux-outline" ><span class="aux-overlay"></span><span class="aux-text">Read More</span></a>            </div>
         </div>
                     <div class="aux-text-widget-footer">
@@ -1363,7 +1666,7 @@ display: none;
 								<div class="elementor-element elementor-element-41b97e0 aux-appear-watch-animation aux-slide-from-bot elementor-widget elementor-widget-aux_modern_heading" data-id="41b97e0" data-element_type="widget" data-widget_type="aux_modern_heading.default">
 				<div class="elementor-widget-container">
 			<section class="aux-widget-modern-heading">
-            <div class="aux-widget-inner"><p class="aux-modern-heading-primary">OUR RESULTS</p><h4 class="aux-modern-heading-secondary"><span class="aux-head-before">Neptune INC is one of the most successful Placers</span></h4><div class="aux-modern-heading-divider"></div><div class="aux-modern-heading-description"><p>Collaboration With Team Neptune Inc As A Family Will Lead To Fulfillment Of Your Critical Manpower Needs Of International Projects.<br />We Attach A Great Value To Our Employees And With Lots Of Passion And Positive Team Spirit.</p></div></div>
+            <div class="aux-widget-inner"><p class="aux-modern-heading-primary">OUR RESULTS</p><h4 class="aux-modern-heading-secondary"><span class="aux-head-before">DRT Services Pvt Ltd is one of the most successful Placers</span></h4><div class="aux-modern-heading-divider"></div><div class="aux-modern-heading-description"><p>Collaboration With Team DRT Services Pvt Ltd As A Family Will Lead To Fulfillment Of Your Critical Manpower Needs Of International Projects.<br />We Attach A Great Value To Our Employees And With Lots Of Passion And Positive Team Spirit.</p></div></div>
         </section>		</div>
 				</div>
 				<section class="elementor-section elementor-inner-section elementor-element elementor-element-0c9f2e2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="0c9f2e2" data-element_type="section">
@@ -1904,7 +2207,7 @@ No 603,604 Behind DVP City Mall,Kawala Naka,Sahapuri,Kolhapur, Maharashtra-41600
 
 <p><b>Email Us:</b></p>
 
-<i class="fa fa-envelope"></i> : apply@neptuneinc.in
+<i class="fa fa-envelope"></i> : apply@drt.in
 
 						</div>
 				</div>
@@ -2286,7 +2589,7 @@ No 603,604 Behind DVP City Mall,Kawala Naka,Sahapuri,Kolhapur, Maharashtra-41600
             
 
             
-            <img width="120" height="80" src="https://neptuneinc.in/image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="aux-attachment aux-featured-image aux-attachment-id-127 aux-preload aux-blank" alt="Untitled design (3)" data-ratio="1.5" data-original-w="120" data-src="https://neptuneinc.in/wp-content/uploads/2023/08/Untitled-design-3.png" />            
+            <img width="120" height="80" src="https://neptuneinc.in/image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" class="aux-attachment aux-featured-image aux-attachment-id-127 aux-preload aux-blank" alt="Untitled design (3)" data-ratio="1.5" data-original-w="120" data-src="wp-content/uploads/2023/08/drt (1).webp" />            
                     </a>
                 </div>
     </div>
@@ -2340,7 +2643,7 @@ No 603,604 Behind DVP City Mall,Kawala Naka,Sahapuri,Kolhapur, Maharashtra-41600
 											</a>
 				</p>
 									<p class="elementor-icon-box-description">
-						<a href = "mailto: apply@neptuneinc.in"> apply@neptuneinc.in</a>					</p>
+						<a href = "mailto: apply@drt.in"> apply@drt.in</a>					</p>
 							</div>
 		</div>
 				</div>
@@ -2397,7 +2700,7 @@ No 603,604 Behind DVP City Mall,Kawala Naka,Sahapuri,Kolhapur, Maharashtra-41600
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-bc2afe2 elementor-widget elementor-widget-aux_copyright" data-id="bc2afe2" data-element_type="widget" data-widget_type="aux_copyright.default">
 				<div class="elementor-widget-container">
-			<small>&copy; 2026 Neptune INC. All rights reserved.</small>		</div>
+			<small>&copy; 2026 DRT Services Pvt Ltd. All rights reserved.</small>		</div>
 				</div>
 					</div>
 		</div>
@@ -2554,3 +2857,4 @@ const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(
 <!-- end wp_footer -->
 </body>
 </html>
+
