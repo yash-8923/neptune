@@ -109,6 +109,675 @@ function auxinNS(n){for(var e=n.split("."),a=window,i="",r=e.length,t=0;r>t;t++)
 
 <meta name="generator" content="Elementor 3.15.3; features: e_dom_optimization, e_optimized_assets_loading, e_optimized_css_loading, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto">
 <style>.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>		<style id="wp-custom-css">
+			/* Base Transitions & Animations - Lightweight */
+			html {
+				scroll-behavior: smooth;
+			}
+			
+			/* Top Header - Keep horizontal on all devices */
+			.elementor-element-83db42f .elementor-container {
+				display: flex;
+				flex-wrap: nowrap;
+				align-items: center;
+				justify-content: space-between;
+			}
+			
+			.elementor-element-83db42f .elementor-col-50 {
+				flex: 1 1 auto;
+				min-width: auto;
+			}
+			
+			.elementor-element-83db42f .elementor-col-50:last-child {
+				display: flex;
+				flex-wrap: nowrap;
+				align-items: center;
+				justify-content: flex-end;
+				gap: 20px;
+			}
+			
+			/* Icon Box Hover Effects - More Visible */
+			.elementor-icon-box-wrapper {
+				transition: all 0.3s ease;
+				padding: 8px 12px;
+				border-radius: 8px;
+			}
+			
+			.elementor-icon-box-wrapper:hover {
+				transform: translateY(-3px);
+				background-color: rgba(37, 99, 235, 0.08);
+				box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+			}
+			
+			.elementor-icon-box-icon .elementor-icon {
+				transition: all 0.3s ease;
+				color: var(--e-global-color-primary, #2563eb);
+			}
+			
+			.elementor-icon-box-wrapper:hover .elementor-icon-box-icon .elementor-icon {
+				transform: scale(1.15);
+				color: #1d4ed8;
+			}
+			
+			.elementor-icon-box-description a {
+				transition: color 0.3s ease;
+			}
+			
+			.elementor-icon-box-wrapper:hover .elementor-icon-box-description a {
+				color: var(--e-global-color-primary, #2563eb);
+			}
+			
+			/* Navigation Menu - Bold Underline Animation */
+			.aux-master-menu .aux-menu-item > a {
+				position: relative;
+				transition: all 0.3s ease;
+				font-weight: 500;
+			}
+			
+			.aux-master-menu .aux-menu-item > a::after {
+				content: '';
+				position: absolute;
+				bottom: -4px;
+				left: 50%;
+				width: 0;
+				height: 3px;
+				background: linear-gradient(90deg, var(--e-global-color-primary, #2563eb), #60a5fa);
+				transition: all 0.3s ease;
+				transform: translateX(-50%);
+				border-radius: 2px;
+			}
+			
+			.aux-master-menu .aux-menu-item:hover > a::after,
+			.aux-master-menu .aux-menu-item.current-menu-item > a::after {
+				width: 100%;
+			}
+			
+			.aux-master-menu .aux-menu-item:hover > a {
+				color: var(--e-global-color-primary, #2563eb);
+			}
+			
+			/* Submenu Animation - Slide Down Effect */
+			.aux-submenu {
+				opacity: 0;
+				visibility: hidden;
+				transform: translateY(-15px) scale(0.95);
+				transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+				box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+				border-radius: 12px;
+				padding: 12px 0;
+				background: white;
+				min-width: 220px;
+			}
+			
+			.aux-menu-item:hover > .aux-submenu {
+				opacity: 1;
+				visibility: visible;
+				transform: translateY(0) scale(1);
+			}
+			
+			.aux-submenu .aux-menu-item > a {
+				padding: 10px 20px;
+				display: block;
+				transition: all 0.2s ease;
+			}
+			
+			.aux-submenu .aux-menu-item:hover > a {
+				background-color: rgba(37, 99, 235, 0.08);
+				padding-left: 24px;
+			}
+			
+			/* Mobile Menu Toggle - Animated Hamburger */
+			.aux-burger {
+				transition: all 0.3s ease;
+				padding: 10px;
+			}
+			
+			.aux-burger:hover {
+				transform: scale(1.1);
+				background-color: rgba(37, 99, 235, 0.1);
+				border-radius: 8px;
+			}
+			
+			.aux-burger .mid-line,
+			.aux-burger::before,
+			.aux-burger::after {
+				transition: all 0.3s ease;
+			}
+			
+			.menu-open .aux-burger .mid-line {
+				opacity: 0;
+			}
+			
+			.menu-open .aux-burger::before {
+				transform: rotate(45deg) translate(5px, 5px);
+			}
+			
+			.menu-open .aux-burger::after {
+				transform: rotate(-45deg) translate(5px, -5px);
+			}
+			
+			/* Hero Section - Dramatic Entrance Animation */
+			.custom-hero-section {
+				opacity: 0;
+				animation: heroFadeIn 0.8s ease-out forwards;
+			}
+			
+			@keyframes heroFadeIn {
+				from {
+					opacity: 0;
+					transform: translateY(30px);
+				}
+				to {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+			
+			.custom-hero-eyebrow {
+				opacity: 0;
+				animation: slideInLeft 0.6s ease-out 0.2s forwards;
+			}
+			
+			@keyframes slideInLeft {
+				from {
+					opacity: 0;
+					transform: translateX(-30px);
+				}
+				to {
+					opacity: 1;
+					transform: translateX(0);
+				}
+			}
+			
+			.custom-hero-title {
+				opacity: 0;
+				animation: slideInUp 0.7s ease-out 0.3s forwards;
+			}
+			
+			@keyframes slideInUp {
+				from {
+					opacity: 0;
+					transform: translateY(40px);
+				}
+				to {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+			
+			.custom-hero-subtitle {
+				opacity: 0;
+				animation: fadeIn 0.6s ease-out 0.5s forwards;
+			}
+			
+			@keyframes fadeIn {
+				from { opacity: 0; }
+				to { opacity: 1; }
+			}
+			
+			.custom-hero-actions {
+				opacity: 0;
+				animation: bounceIn 0.7s ease-out 0.6s forwards;
+			}
+			
+			@keyframes bounceIn {
+				0% {
+					opacity: 0;
+					transform: scale(0.8);
+				}
+				60% {
+					transform: scale(1.05);
+				}
+				100% {
+					opacity: 1;
+					transform: scale(1);
+				}
+			}
+			
+			.custom-hero-meta {
+				opacity: 0;
+				animation: fadeInUp 0.6s ease-out 0.8s forwards;
+			}
+			
+			@keyframes fadeInUp {
+				from {
+					opacity: 0;
+					transform: translateY(20px);
+				}
+				to {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+			
+			.custom-hero-visual {
+				opacity: 0;
+				animation: slideInRight 0.8s ease-out 0.4s forwards;
+			}
+			
+			@keyframes slideInRight {
+				from {
+					opacity: 0;
+					transform: translateX(50px);
+				}
+				to {
+					opacity: 1;
+					transform: translateX(0);
+				}
+			}
+			
+			/* Hero Button - Bold Hover Effects */
+			.custom-hero-btn-primary,
+			.custom-hero-btn-secondary {
+				transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+				position: relative;
+				overflow: hidden;
+			}
+			
+			.custom-hero-btn-primary::before,
+			.custom-hero-btn-secondary::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: -100%;
+				width: 100%;
+				height: 100%;
+				background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+				transition: left 0.5s ease;
+			}
+			
+			.custom-hero-btn-primary:hover,
+			.custom-hero-btn-secondary:hover {
+				transform: translateY(-3px) scale(1.02);
+				box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
+			}
+			
+			.custom-hero-btn-primary:hover::before,
+			.custom-hero-btn-secondary:hover::before {
+				left: 100%;
+			}
+			
+			.custom-hero-btn-primary:active,
+			.custom-hero-btn-secondary:active {
+				transform: translateY(-1px) scale(0.98);
+			}
+			
+			/* Industries Cards - Dramatic Hover Effects */
+			.custom-industry-card {
+				transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+				position: relative;
+				overflow: hidden;
+			}
+			
+			.custom-industry-card::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 4px;
+				background: linear-gradient(90deg, var(--e-global-color-primary, #2563eb), #60a5fa);
+				transform: scaleX(0);
+				transition: transform 0.4s ease;
+				z-index: 1;
+			}
+			
+			.custom-industry-card:hover {
+				transform: translateY(-8px);
+				box-shadow: 0 20px 50px rgba(37, 99, 235, 0.2);
+			}
+			
+			.custom-industry-card:hover::before {
+				transform: scaleX(1);
+			}
+			
+			.custom-industry-card img {
+				transition: transform 0.5s ease;
+			}
+			
+			.custom-industry-card:hover img {
+				transform: scale(1.08);
+			}
+			
+			.custom-industry-body {
+				transition: all 0.3s ease;
+			}
+			
+			.custom-industry-card:hover .custom-industry-body {
+				background: linear-gradient(180deg, transparent, rgba(37, 99, 235, 0.03));
+			}
+			
+			.custom-industry-footer a {
+				position: relative;
+				transition: all 0.3s ease;
+				color: var(--e-global-color-primary, #2563eb);
+				font-weight: 600;
+			}
+			
+			.custom-industry-footer a::after {
+				content: '→';
+				margin-left: 6px;
+				transition: all 0.3s ease;
+				display: inline-block;
+			}
+			
+			.custom-industry-card:hover .custom-industry-footer a::after {
+				transform: translateX(8px);
+			}
+			
+			/* Scroll Reveal - Dramatic Entrance */
+			.reveal-on-scroll {
+				opacity: 0;
+				transform: translateY(40px) scale(0.95);
+				transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+			}
+			
+			.reveal-on-scroll.revealed {
+				opacity: 1;
+				transform: translateY(0) scale(1);
+			}
+			
+			/* Staggered delays for multiple elements */
+			.reveal-on-scroll:nth-child(1) { transition-delay: 0.1s; }
+			.reveal-on-scroll:nth-child(2) { transition-delay: 0.2s; }
+			.reveal-on-scroll:nth-child(3) { transition-delay: 0.3s; }
+			.reveal-on-scroll:nth-child(4) { transition-delay: 0.4s; }
+			.reveal-on-scroll:nth-child(5) { transition-delay: 0.5s; }
+			.reveal-on-scroll:nth-child(6) { transition-delay: 0.6s; }
+			
+			/* Footer Links - Animated Hover */
+			.aux-icon-list-link {
+				transition: all 0.3s ease;
+				display: inline-block;
+				position: relative;
+			}
+			
+			.aux-icon-list-link::before {
+				content: '›';
+				position: absolute;
+				left: -15px;
+				opacity: 0;
+				transition: all 0.3s ease;
+				color: var(--e-global-color-primary, #2563eb);
+				font-size: 18px;
+				line-height: 1;
+			}
+			
+			.aux-icon-list-link:hover {
+				padding-left: 12px;
+				color: var(--e-global-color-primary, #2563eb);
+			}
+			
+			.aux-icon-list-link:hover::before {
+				opacity: 1;
+				left: -5px;
+			}
+			
+			/* Buttons - Enhanced Hover Effects */
+			.aux-button {
+				transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+				position: relative;
+				overflow: hidden;
+			}
+			
+			.aux-button::after {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 0;
+				height: 0;
+				background: rgba(255,255,255,0.2);
+				border-radius: 50%;
+				transform: translate(-50%, -50%);
+				transition: width 0.4s ease, height 0.4s ease;
+			}
+			
+			.aux-button:hover {
+				transform: translateY(-3px);
+				box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+			}
+			
+			.aux-button:hover::after {
+				width: 200%;
+				height: 200%;
+			}
+			
+			.aux-button:active {
+				transform: translateY(-1px);
+			}
+			
+			/* Images - Zoom & Glow Effect */
+			.aux-media-image {
+				overflow: hidden;
+				border-radius: 12px;
+			}
+			
+			.aux-media-image img {
+				transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+			}
+			
+			.aux-media-image:hover img {
+				transform: scale(1.08);
+			}
+			
+			.aux-media-image:hover {
+				box-shadow: 0 12px 30px rgba(37, 99, 235, 0.15);
+			}
+			
+			/* Mobile Responsive - Keep Navbar Horizontal */
+			@media only screen and (max-width: 767px) {
+				/* Hide welcome text on mobile - show only icons */
+				.elementor-element-83db42f .elementor-col-50:first-child p {
+					display: none;
+				}
+
+				/* Top header - Show only icons */
+				.elementor-element-83db42f .elementor-container {
+					justify-content: flex-end;
+					padding: 10px 15px;
+				}
+
+				.elementor-element-83db42f .elementor-col-50:last-child {
+					display: flex;
+					flex-wrap: nowrap;
+					gap: 12px;
+					width: auto;
+				}
+
+				/* Icon boxes - Compact on mobile */
+				.elementor-element-76ccf40,
+				.elementor-element-bb4e0a2,
+				.elementor-element-96de39b {
+					flex: 0 0 auto;
+				}
+
+				.elementor-icon-box-wrapper {
+					padding: 6px 8px;
+				}
+
+				.elementor-icon-box-description {
+					font-size: 12px;
+				}
+
+				/* Clean hamburger menu - no background, just lines */
+				.aux-burger-box {
+					background: transparent !important;
+					padding: 8px !important;
+					border: none !important;
+					box-shadow: none !important;
+				}
+
+				.aux-burger {
+					width: 24px !important;
+					height: 18px !important;
+					position: relative !important;
+					background: none !important;
+					display: flex !important;
+					flex-direction: column !important;
+					justify-content: space-between !important;
+				}
+
+				.aux-burger::before,
+				.aux-burger::after,
+				.aux-burger .mid-line {
+					content: '' !important;
+					display: block !important;
+					width: 100% !important;
+					height: 2px !important;
+					background-color: #333 !important;
+					position: static !important;
+					transition: all 0.3s ease !important;
+					border-radius: 1px !important;
+				}
+
+				.aux-burger:hover::before,
+				.aux-burger:hover::after,
+				.aux-burger:hover .mid-line {
+					background-color: var(--e-global-color-primary, #2563eb) !important;
+				}
+
+				/* Better mobile menu */
+				.aux-fs-popup .aux-fs-menu {
+					padding-top: 80px;
+				}
+
+				.aux-fs-menu .aux-master-menu {
+					text-align: center;
+				}
+
+				.aux-fs-menu .aux-menu-item {
+					margin-bottom: 16px;
+					font-size: 18px;
+				}
+
+				.aux-fs-menu .aux-menu-item > a {
+					color: #333;
+				}
+
+				.aux-fs-menu .aux-menu-item > a:hover {
+					color: var(--e-global-color-primary, #2563eb);
+				}
+
+				/* Hero section mobile */
+				.custom-hero-section {
+					padding: 40px 0 30px;
+				}
+
+				.custom-hero-title {
+					font-size: clamp(22px, 7vw, 28px);
+					line-height: 1.3;
+				}
+
+				.custom-hero-btn-primary,
+				.custom-hero-btn-secondary {
+					padding: 10px 20px;
+					font-size: 12px;
+				}
+
+				/* Industries grid mobile */
+				.home .custom-industries-grid {
+					grid-template-columns: 1fr;
+					gap: 20px;
+				}
+
+				.custom-industry-card:hover {
+					transform: translateY(-4px);
+				}
+
+				/* Mobile navbar - ensure horizontal layout */
+				.elementor-element-83db42f .elementor-col-50:last-child {
+					display: flex !important;
+					flex-direction: row !important;
+					flex-wrap: nowrap !important;
+					justify-content: flex-end !important;
+					align-items: center !important;
+					gap: 8px !important;
+					width: auto !important;
+				}
+
+				.elementor-element-83db42f .elementor-widget-wrap {
+					display: flex !important;
+					flex-direction: row !important;
+					flex-wrap: nowrap !important;
+				}
+
+				/* Hide text on very small screens, keep icons */
+				@media only screen and (max-width: 480px) {
+					.elementor-icon-box-description {
+						font-size: 10px;
+					}
+					
+					.elementor-icon-box-wrapper {
+						padding: 4px 6px;
+					}
+				}
+
+				/* Footer mobile */
+				.elementor-element-2db1c2f .aux-icon-list-items,
+				.elementor-element-514a4d1 .aux-icon-list-items,
+				.elementor-element-2b7bfa4 .aux-icon-list-items {
+					display: flex;
+					flex-direction: column;
+					gap: 10px;
+				}
+			}
+			
+			@media only screen and (max-width: 1024px) and (min-width: 768px) {
+				/* Tablet - Keep horizontal layout */
+				.elementor-element-83db42f .elementor-container {
+					flex-wrap: nowrap;
+				}
+				
+				.elementor-element-83db42f .elementor-col-50:last-child {
+					display: flex;
+					flex-wrap: nowrap;
+					gap: 16px;
+				}
+				
+				.home .custom-industries-grid {
+					grid-template-columns: repeat(2, 1fr);
+				}
+			}
+			
+			/* Small mobile devices */
+			@media only screen and (max-width: 480px) {
+				.elementor-element-83db42f .elementor-col-50:first-child p {
+					font-size: 11px;
+				}
+				
+				.elementor-icon-box-description {
+					font-size: 11px;
+				}
+				
+				.elementor-icon-box-icon .elementor-icon {
+					font-size: 14px;
+				}
+			}
+			
+			/* Reduced Motion Support */
+			@media (prefers-reduced-motion: reduce) {
+				* {
+					animation-duration: 0.01ms !important;
+					animation-iteration-count: 1 !important;
+					transition-duration: 0.01ms !important;
+				}
+				
+				html {
+					scroll-behavior: auto;
+				}
+				
+				.custom-hero-section,
+				.custom-hero-eyebrow,
+				.custom-hero-title,
+				.custom-hero-subtitle,
+				.custom-hero-actions,
+				.custom-hero-meta,
+				.custom-hero-visual {
+					opacity: 1;
+					animation: none;
+				}
+			}
+			
 			/* Page-Header */
 .page-header .aux-breadcrumbs .auxicon-arrow:before{
     font-size: 8px;
@@ -709,6 +1378,50 @@ display: none;
 }
 
 		</style>
+		
+		<!-- Lightweight Scroll Reveal Script -->
+		<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			// Add reveal class to elements
+			const revealElements = document.querySelectorAll('.aux-widget-modern-heading, .aux-widget-image, .custom-industry-card, .elementor-widget-aux_text');
+			
+			revealElements.forEach(function(el) {
+				el.classList.add('reveal-on-scroll');
+			});
+			
+			// Simple intersection observer for scroll reveals
+			if ('IntersectionObserver' in window) {
+				const observer = new IntersectionObserver(function(entries) {
+					entries.forEach(function(entry) {
+						if (entry.isIntersecting) {
+							entry.target.classList.add('revealed');
+							observer.unobserve(entry.target);
+						}
+					});
+				}, {
+					threshold: 0.1,
+					rootMargin: '0px 0px -50px 0px'
+				});
+				
+				revealElements.forEach(function(el) {
+					observer.observe(el);
+				});
+			} else {
+				// Fallback for older browsers
+				revealElements.forEach(function(el) {
+					el.classList.add('revealed');
+				});
+			}
+			
+			// Mobile menu toggle animation
+			const burgerBox = document.querySelector('.aux-burger-box');
+			if (burgerBox) {
+				burgerBox.addEventListener('click', function() {
+					document.body.classList.toggle('menu-open');
+				});
+			}
+		});
+		</script>
 		<!-- end wp_head -->
 <link rel='stylesheet' id='depicter-1-google-font-css' href='https://fonts.googleapis.com/css?family=Josefin+Sans%3A700%2C600%2C400%7CAlef%3A700&#038;display=swap&#038;ver=6.9' media='all' />
 <link rel="preload" as="style" onload="this.rel='stylesheet';this.onload=null" id='depicter--1-custom-css' href='wp-content/uploads/depicter/css/1.css@ver=1693218893.css' media='all' />
@@ -734,7 +1447,7 @@ display: none;
         <div class="aux-wrapper">
             <div class="aux-header aux-header-elements-wrapper">
             		<div data-elementor-type="header" data-elementor-id="110" class="elementor elementor-110">
-									<section class="elementor-section elementor-top-section elementor-element elementor-element-83db42f elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="83db42f" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-83db42f elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="83db42f" data-element_type="section" data-settings="{"background_background":"classic"}">
 						<div class="elementor-container elementor-column-gap-no">
 					<div class="aux-parallax-section elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-e0e420c" data-id="e0e420c" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
@@ -1205,7 +1918,7 @@ display: none;
 		</div>
 							</div>
 		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-a301fdf elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a301fdf" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-a301fdf elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a301fdf" data-element_type="section" data-settings="{"background_background":"classic"}">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="aux-parallax-section elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5f03f27" data-id="5f03f27" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
@@ -1659,7 +2372,7 @@ display: none;
 		</div>
 							</div>
 		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-62855ed elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="62855ed" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-62855ed elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="62855ed" data-element_type="section" data-settings="{"background_background":"classic"}">
 						<div class="elementor-container elementor-column-gap-no">
 					<div class="aux-parallax-section elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1b126be" data-id="1b126be" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
@@ -1748,16 +2461,16 @@ display: none;
 		</div>
 							</div>
 		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-d69d22d elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d69d22d" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-d69d22d elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d69d22d" data-element_type="section" data-settings="{"background_background":"classic"}">
 						<div class="elementor-container elementor-column-gap-no">
 					<div class="aux-parallax-section elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-246c2b1" data-id="246c2b1" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-fee7706 aux-appear-watch-animation aux-scale-down elementor-widget elementor-widget-aux_flexible_carousel" data-id="fee7706" data-element_type="widget" data-settings="{&quot;columns&quot;:&quot;1&quot;,&quot;columns_tablet&quot;:&quot;inherit&quot;,&quot;columns_mobile&quot;:&quot;1&quot;}" data-widget_type="aux_flexible_carousel.default">
+								<div class="elementor-element elementor-element-fee7706 aux-appear-watch-animation aux-scale-down elementor-widget elementor-widget-aux_flexible_carousel" data-id="fee7706" data-element_type="widget" data-settings="{"columns":"1","columns_tablet":"inherit","columns_mobile":"1"}" data-widget_type="aux_flexible_carousel.default">
 				<div class="elementor-widget-container">
 			<section class="widget-container aux-widget-flexible-carousel aux-parent-auf10955fa" style="" ><div data-element-id="auf10955fa" class="master-carousel aux-no-js aux-mc-before-init aux--control" data-columns="1" data-autoplay="" data-delay="" data-navigation="peritem" data-space="25" data-loop="yes" data-wrap-controls="true" data-bullets="true" data-bullet-class="aux-bullets aux-small aux-mask" data-arrows="false" data-same-height="true" data-responsive="1025:1,767:1" ><div class="aux-col aux-mc-item">		<div data-elementor-type="section" data-elementor-id="103" class="elementor elementor-103">
-									<section class="elementor-section elementor-top-section elementor-element elementor-element-1b18cb4 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1b18cb4" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-1b18cb4 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1b18cb4" data-element_type="section" data-settings="{"background_background":"classic"}">
 						<div class="elementor-container elementor-column-gap-no">
-					<div class="aux-parallax-section elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b37773d" data-id="b37773d" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="aux-parallax-section elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b37773d" data-id="b37773d" data-element_type="column" data-settings="{"background_background":"classic"}">
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-5d9b752 elementor-widget__width-auto elementor-widget elementor-widget-aux_simple_svg" data-id="5d9b752" data-element_type="widget" data-widget_type="aux_simple_svg.default">
 				<div class="elementor-widget-container">
@@ -1797,9 +2510,9 @@ display: none;
 		</section>
 							</div>
 		</div><div class="aux-col aux-mc-item">		<div data-elementor-type="section" data-elementor-id="102" class="elementor elementor-102">
-									<section class="elementor-section elementor-top-section elementor-element elementor-element-48c8498 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="48c8498" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-48c8498 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="48c8498" data-element_type="section" data-settings="{"background_background":"classic"}">
 						<div class="elementor-container elementor-column-gap-no">
-					<div class="aux-parallax-section elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2f74df0" data-id="2f74df0" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="aux-parallax-section elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2f74df0" data-id="2f74df0" data-element_type="column" data-settings="{"background_background":"classic"}">
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-0d2fd2c elementor-widget__width-auto elementor-widget elementor-widget-aux_simple_svg" data-id="0d2fd2c" data-element_type="widget" data-widget_type="aux_simple_svg.default">
 				<div class="elementor-widget-container">
@@ -1838,9 +2551,9 @@ display: none;
 		</section>
 							</div>
 		</div><div class="aux-col aux-mc-item">		<div data-elementor-type="section" data-elementor-id="101" class="elementor elementor-101">
-									<section class="elementor-section elementor-top-section elementor-element elementor-element-d3a8472 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d3a8472" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-d3a8472 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d3a8472" data-element_type="section" data-settings="{"background_background":"classic"}">
 						<div class="elementor-container elementor-column-gap-no">
-					<div class="aux-parallax-section elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ab7d814" data-id="ab7d814" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="aux-parallax-section elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ab7d814" data-id="ab7d814" data-element_type="column" data-settings="{"background_background":"classic"}">
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-1c3be2f elementor-widget__width-auto elementor-widget elementor-widget-aux_simple_svg" data-id="1c3be2f" data-element_type="widget" data-widget_type="aux_simple_svg.default">
 				<div class="elementor-widget-container">
@@ -1880,7 +2593,7 @@ display: none;
 		</div><div class="aux-col aux-mc-item">		<div data-elementor-type="section" data-elementor-id="90" class="elementor elementor-90">
 									<section class="elementor-section elementor-top-section elementor-element elementor-element-37c7e7c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="37c7e7c" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-no">
-					<div class="aux-parallax-section elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c9d52d0" data-id="c9d52d0" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="aux-parallax-section elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c9d52d0" data-id="c9d52d0" data-element_type="column" data-settings="{"background_background":"classic"}">
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-f7ba363 elementor-widget__width-auto elementor-widget elementor-widget-aux_simple_svg" data-id="f7ba363" data-element_type="widget" data-widget_type="aux_simple_svg.default">
 				<div class="elementor-widget-container">
@@ -1962,7 +2675,7 @@ display: none;
 
     		</div>
 				</div>
-				<div class="elementor-element elementor-element-1d8da17 carousel aux-appear-watch-animation aux-scale-down elementor-widget elementor-widget-aux_flexible_carousel" data-id="1d8da17" data-element_type="widget" id="carousel" data-settings="{&quot;columns&quot;:&quot;3&quot;,&quot;columns_tablet&quot;:&quot;2&quot;,&quot;columns_mobile&quot;:&quot;1&quot;}" data-widget_type="aux_flexible_carousel.default">
+				<div class="elementor-element elementor-element-1d8da17 carousel aux-appear-watch-animation aux-scale-down elementor-widget elementor-widget-aux_flexible_carousel" data-id="1d8da17" data-element_type="widget" id="carousel" data-settings="{"columns":"3","columns_tablet":"2","columns_mobile":"1"}" data-widget_type="aux_flexible_carousel.default">
 				<div class="elementor-widget-container">
 			<section class="widget-container aux-widget-flexible-carousel aux-parent-aufa06d948" style="" ><div data-element-id="aufa06d948" class="master-carousel aux-no-js aux-mc-before-init aux--control" data-columns="3" data-autoplay="" data-delay="" data-navigation="peritem" data-space="25" data-loop="yes" data-wrap-controls="true" data-bullets="true" data-bullet-class="aux-bullets aux-small aux-mask" data-arrows="false" data-same-height="true" data-responsive="1025:2,767:1" ><div class="aux-col aux-mc-item">		<div data-elementor-type="section" data-elementor-id="98" class="elementor elementor-98">
 									<section class="elementor-section elementor-top-section elementor-element elementor-element-cb73c77 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="cb73c77" data-element_type="section">
@@ -2186,7 +2899,7 @@ display: none;
 		</section>
 				<section class="elementor-section elementor-top-section elementor-element elementor-element-7a79ecf elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7a79ecf" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-no">
-					<div class="aux-parallax-section elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-1fd8761" data-id="1fd8761" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="aux-parallax-section elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-1fd8761" data-id="1fd8761" data-element_type="column" data-settings="{"background_background":"classic"}">
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-caf2ab6 aux-appear-watch-animation aux-slide-from-bot elementor-widget elementor-widget-aux_modern_heading" data-id="caf2ab6" data-element_type="widget" data-widget_type="aux_modern_heading.default">
 				<div class="elementor-widget-container">
@@ -2214,7 +2927,7 @@ display: none;
 				</div>
 					</div>
 		</div>
-				<div class="aux-parallax-section elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-bc8bb8c" data-id="bc8bb8c" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="aux-parallax-section elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-bc8bb8c" data-id="bc8bb8c" data-element_type="column" data-settings="{"background_background":"classic"}">
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-0e30dc7 aux-appear-watch-animation aux-slide-from-bot elementor-widget elementor-widget-aux_modern_heading" data-id="0e30dc7" data-element_type="widget" data-widget_type="aux_modern_heading.default">
 				<div class="elementor-widget-container">
@@ -2294,7 +3007,7 @@ display: none;
 
     		</div>
 				</div>
-				<div class="elementor-element elementor-element-6e90474 aux-appear-watch-animation aux-scale-down elementor-widget elementor-widget-aux_recent_posts" data-id="6e90474" data-element_type="widget" data-settings="{&quot;columns&quot;:&quot;3&quot;,&quot;columns_tablet&quot;:&quot;2&quot;,&quot;columns_mobile&quot;:&quot;1&quot;}" data-widget_type="aux_recent_posts.default">
+				<div class="elementor-element elementor-element-6e90474 aux-appear-watch-animation aux-scale-down elementor-widget elementor-widget-aux_recent_posts" data-id="6e90474" data-element_type="widget" data-settings="{"columns":"3","columns_tablet":"2","columns_mobile":"1"}" data-widget_type="aux_recent_posts.default">
 				<div class="elementor-widget-container">
 			<section class="widget-container aux-widget-recent-posts aux-parent-au0e9da023"><div data-element-id="au0e9da023" class="aux-match-height aux-row aux-de-col3 aux-tb-col2 aux-mb-col1 aux-total-3 aux-no-meta aux-ajax-view  "><div class="aux-col post-82">
                         <article class="post column-entry post-82 type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized tag-blog">
@@ -2571,7 +3284,7 @@ display: none;
     <footer class="aux-elementor-footer" itemscope="itemscope" itemtype="https://schema.org/WPFooter" role="contentinfo"  >
         <div class="aux-wrapper">
         		<div data-elementor-type="footer" data-elementor-id="93" class="elementor elementor-93">
-									<section class="elementor-section elementor-top-section elementor-element elementor-element-9f4095b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9f4095b" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+									<section class="elementor-section elementor-top-section elementor-element elementor-element-9f4095b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9f4095b" data-element_type="section" data-settings="{"background_background":"classic"}">
 							<div class="elementor-background-overlay"></div>
 							<div class="elementor-container elementor-column-gap-no">
 					<div class="aux-parallax-section elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-18e2549" data-id="18e2549" data-element_type="column">
@@ -2859,4 +3572,3 @@ const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(
 <!-- end wp_footer -->
 </body>
 </html>
-
